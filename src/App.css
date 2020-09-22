@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
+.searchbar{
+  width:50%;
+  padding: 10px 30px;
+  height: 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  border: 2px solid black
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchbar-container{
   display: flex;
-  flex-direction: column;
+  justify-content: center
+}
+.header,.main{
+  background: white;
+  padding: 10px;
+  border: 2px black solid
+}
+.main{
+  margin-top: 10px
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.card{
+  border: 2px black solid;
+  padding: 10px;
+width: 200px;
+height: 350px;
+margin: 20px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
+
+}
+.card-add{
+  font-size: 100px;
+  transition: all 1s ease
+}
+.cards-add:hover .card-add{
+  cursor: pointer;
+  font-size: 95px
+}
+.block{
+  display: block
+}
+.none{
+  display: none
+}
+.pop-up{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.479);
+  top: 0;
+  
+  
 }
-
-.App-link {
-  color: #61dafb;
+.app1{
+  overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pop-down{
+  display: none
+}
+.movie-pic{
+  max-width: 200px
+}
+.send,.cancel{
+  color: rgb(0, 0, 0);
+  background: rgb(0, 95, 133);
+  cursor: pointer;
+  padding: 10px 20px;
 }
